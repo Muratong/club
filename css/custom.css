@@ -1,0 +1,189 @@
+/*
+navbar-default personalizada en:
+http://work.smarchal.com/twbscolor/
+
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+nav{
+  height: 100%;
+  /*text-transform: uppercase;*/
+  font-size: 14px;
+  transition: all 300ms ease;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1.0);
+  position: fixed;
+}
+
+.navbar-default .navbar-nav li a:hover{
+  transform: scale(1.0);
+  background:#092306;
+/*  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);*/
+/*  border-radius: 20px;*/
+  max-width: 200px;
+  color: black;
+}
+.panel-heading, .panel-body{
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.btn-primary, .btn-info{
+  background-color: #092306;
+}
+/* sub-menu */
+ul li ul{
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3498db;
+  position: absolute;
+  padding: 14px 5px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  top: 60px;
+  right: 0px;
+  z-index: 10;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ul li:hover ul{
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+/*ul li ul:before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+ }*/
+ hr{
+  display: none;
+ }
+@media(max-width:450px){
+  hr{
+    display: flex;
+    padding: 0px;
+    margin: 0;
+  }
+}
+ul li ul li{
+position: relative;
+padding: 10px;
+margin-bottom: 5px;
+list-style: none;
+transform: scale(1.0);
+/*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);*/
+background-color: white;
+text-decoration: none;
+border-radius: 10px;
+
+}
+.navbar-right li ul li a{
+  padding: 10px;
+}
+.navbar-right li: hover{
+  transform: scale(1.0);
+  
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+
+}
+
+
+@media(max-width:750){
+   .navbar-default .navbar-nav > li > a:hover{
+  transform: scale(1.0);
+  background: lightblue;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding-left: 60px;
+}
+}
+.navbar-right li{
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+.navbar-right ul li  a{
+  color: lightblue;
+  text-decoration: none;
+}
+
+.navbar-default {
+  background-color: #641213;
+/*   background-color: #3498db;*/
+  border-color: #2980b9;
+} 
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ecdbff;
+  background-color: #092306;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ecdbff;
+  background-color: #2980b9;
+}
+.navbar-default .navbar-toggle {
+  border-color: #2980b9;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #2980b9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #2980b9;
+  }
+}
